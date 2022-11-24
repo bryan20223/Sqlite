@@ -6,16 +6,16 @@
         <StackLayout>
             <Label Text="Lista de Estudiantes"/>
 
-            <ListView x:Name="ListaEstudiantes" ItemSelected="ListaEstudiantes_ItemSelected">
+            <ListView x:Name="ListaEstudiantes" ItemSelected ="ListaEstudiantes_ItemSelected">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Nombre}" Detail="{Binding Usuario}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+
+
             </ListView>
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
